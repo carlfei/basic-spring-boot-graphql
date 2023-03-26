@@ -1,0 +1,14 @@
+type Car {
+  id: ID!
+  model: String!
+  year: String!
+}
+
+type Query {
+  findAllCars: [Car]!
+  countCars: Long!
+}
+
+type Mutation {
+  newCar(model: String!, year: String!) : Car!
+}
